@@ -1,0 +1,21 @@
+
+    <form name="f1" method="POST" action="/updatecontact">
+    <h1>
+          {{!-- {{#each results}}  --}}
+        
+        Name<input type="text" value={{results.name}} name="name"><br>
+        contact<input type="text" value={{results.contact}}  name="contact"><br>
+        <input type=submit value="save">
+        {{!-- {{/each}} --}}
+        
+
+
+         {{!-- {{#each results}} 
+        
+        Product {{this}}<input type="text" value={{this}} name="name"><br>
+       <input type=hidden value={{results.product_id}} name="id">
+        <input type=submit value="save">
+        {{/each}}
+         --}}
+    </h1>
+    </form>

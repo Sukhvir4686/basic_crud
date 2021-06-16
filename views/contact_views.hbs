@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>views</title>
+    <style>
+        th{
+            background-color: cadetblue;
+            padding: 20px;
+        }
+        tbody{
+            background-color :rgb(184, 198, 219);
+        }
+        td{
+            padding: 20px;
+        }
+        a{
+            text-decoration: cornsilk;
+        }
+        #a1{
+            background-color: darkgoldenrod;
+            padding: 20px;
+            text-decoration: darkgray;
+            margin-top: 100px;
+        }
+    body{
+        height: 100%;
+        width: 100%;
+    }
+    </style>
+</head>
+<body><h1>
+  
+    <table style="border:2px rgb(221, 96, 96);">
+        <thead>
+            <tr>
+                 <th>Name</th>
+                  <th>contact</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each results}}
+            <tr>
+            <td>{{name}}</td>
+            <td>{{contact}}</td>
+            <td><a href="/contactdelete/{{name}}">Delete</a></td>
+             <td><a href="http://localhost:8000/contactedit/{{name}}">Edit</a></td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table><br><br>
+     <p> <a id="a1" href="/contactadd">Add new contact</a></p>
+    </h1>
+</body>
+</html>
